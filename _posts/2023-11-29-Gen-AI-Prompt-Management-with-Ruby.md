@@ -1,7 +1,7 @@
 ---
 title: "Gen-AI Prompt Management with Ruby"
 categories:
-  - Blog
+  - Engineering
 tags:
   - Prompt Engineering
   - Ruby

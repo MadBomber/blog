@@ -1,7 +1,7 @@
 ---
 title: "AIA and Pre-compositional AI Prompts"
 categories:
-  - Blog
+  - Engineering
 tags:
   - Prompt Engineering
   - Ruby

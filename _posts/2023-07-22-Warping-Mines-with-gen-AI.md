@@ -1,7 +1,7 @@
 ---
 title: "Warping Mines with gen-AI"
 categories:
-  - Blog
+  - Engineering
 tags:
   - Prompt Engineering
 ---

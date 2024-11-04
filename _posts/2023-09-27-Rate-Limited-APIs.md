@@ -1,7 +1,7 @@
 ---
 title: "Rate Limited APIs"
 categories:
-  - Blog
+  - Engineering
 tags:
   - Ruby
   - gem

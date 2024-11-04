@@ -1,7 +1,7 @@
 ---
 title: "TODO or Not TODO"
 categories:
-  - Blog
+  - Engineering
 tags:
   - Prompt Engineering
 ---

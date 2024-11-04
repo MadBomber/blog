@@ -1,7 +1,7 @@
 ---
 title: "The Prompt IS The Code"
 categories:
-  - Blog
+  - Engineering
 tags:
   - Prompt Engineering
 ---
