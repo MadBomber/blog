@@ -1,0 +1,25 @@
+digraph G {
+    // Define the layout
+    rankdir=LR; // Left to Right layout
+
+    // Define nodes for the standard control flow
+    input [label="Input" shape=box];
+    process [label="Process" shape=box];
+    output [label="Output" shape=box];
+
+    // Define edges for the standard control flow
+    input -> process -> output;
+
+    // Define nodes for the LLM flow
+    prompt [label="Prompt" shape=box, style=dashed];
+    llm [label="LLM" shape=box, style=dashed];
+    response [label="Response" shape=box, style=dashed];
+
+    // Define edges for the LLM flow
+    prompt -> llm -> response;
+
+    // Optional: Add a label to clarify the flows
+    label = "Control Flows";
+    labelloc = "t"; // Label location at the top
+}
+
