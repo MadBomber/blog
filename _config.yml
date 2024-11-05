@@ -58,7 +58,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-#  - jekyll-github-metadata  # causing problems in gh actions
 
 author:
   name   : "Dewayne VanHoozer"
