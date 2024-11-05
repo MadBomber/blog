@@ -1,5 +1,5 @@
 ---
-title: "Briefing for Church: Newsletter Account"
+title: "Briefing for Church - Newsletter Account"
 categories:
   - Ministry Online
 ---
@@ -42,5 +42,3 @@ A newsletter is a regular publication sent to a targeted audience to provide upd
 5. **Encourage feedback and interaction:** Include calls-to-action in the newsletters, such as surveys, comments sections, or links to social media, to encourage dialogue and interaction with the church community.
 
 6. **Track and analyze metrics:** Utilize newsletter analytics to assess open rates, click-through rates, and overall engagement, allowing for continuous improvement and optimization of future newsletters.
-
-
