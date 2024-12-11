@@ -11,7 +11,7 @@ tags:
 
 Welcome to the first article in a series that introduces the Ruby gem [**agent99**](https://rubygems.org/gems/agent99), which provides a reference implementation framework for the execution and management of software agents. If you're eager to jump right in, feel free to visit the [software repository](https://github.com/MadBomber/agent99).
 
-> **NOTE:** The Ruby agent code shown in this article is based on working examples. For the most up-to-date and complete examples, please refer to the [agent99 repo](https://github.com/MadBomber/agent99/tree/main/examples).
+> **NOTE:** Some of the Ruby agent code shown in this article is conceptual. For the most up-to-date and complete examples, please refer to the [agent99 repo](https://github.com/MadBomber/agent99/tree/main/examples).
 
 ## Background
 
