@@ -11,11 +11,13 @@ tags:
 
 Welcome to the first article in a series that introduces the  Ruby gem [**agent99**](https://rubygems.org/gems/agent99), which provides a reference implementation framework for the execution and management of software agents. If you're eager to jump right in, feel free to visit the [software repository](https://github.com/MadBomber/agent99).
 
+> **NOTE:** the Ruby agent code shown in this artical may be conceptual.  See the agent99 repo for [working examples.](https://github.com/MadBomber/agent99/tree/main/examples)
+
 ## Background
 
-I've been developed software systems since I wrote my first computer program in the fall of 1970.  It was a one-liner in APL - A Programming Langauge.  Of course all programs in APL are essencially one-liners.  I'm very happy that I've been using Ruby since 2005.
+I've been developing software systems since I wrote my first computer program in the fall of 1970.  It was a one-liner in APL - A Programming Language.  Of course all programs in APL are essencially one-liners.  I'm very happy that I've been using Ruby since 2005.
 
-With this long history, I've accumulated some references that sometimes puzzle newer developers. For instance, when mention that Agent 99 is smarter than Agent 86.
+With this long history, I've accumulated some references that sometimes puzzle newer developers. For instance, when I mentioned that Agent 99 is smarter than Agent 86.
 
 One of my favorite spy shows from the 1960s is [**Get Smart**](https://www.youtube.com/watch?v=16_6XrPlV-w), a title that resonates with today’s growing interest in integrating artificial intelligence (AI) into every software project, which is not always for the better.
 
@@ -49,11 +51,50 @@ The Agent99 gem implements a protocol in Ruby that can be replicated in other pr
 
 ### Understanding Software Agents and the Single Responsibility Principle
 
-Software agents and the Single Responsibility Principle (SRP) are crucial in contemporary software development. They decompose complex systems into manageable, autonomous components, while SRP promotes the creation of maintainable, testable, and adaptable systems. Utilizing both can boost code quality and nurture agility in development teams, particularly in AI, automation, and microservices contexts.
+Software agents and the Single Responsibility Principle (SRP) are crucial in contemporary software development. They decompose complex systems into manageable, autonomous components, while SRP promotes the creation of maintainable, testable, and adaptable systems. Utilizing both can boost code quality and nurture agility in development teams, particularly in AI, automation, and micro-services contexts.
 
 ### What are Software Agents?
 
-In simple terms, a software agent is a designated piece of code that performs a single function effectively. Within the Agent99 framework, agents are instances of subclasses derived from the **Agent99::Base** class. Each subclass is responsible for specific methods that define its unique capabilities, such as the following:
+In simple terms, a software agent is a designated piece of code that performs a single function effectively. Within the Agent99 framework, agents are instances of subclasses derived from the **Agent99::Base** class. These instances can be running in their own seperate process or groups or instances of different Aggent99 instances can run within seperate Threads is a single process.
+
+Here's a simple example of a greeting agent:
+
+```ruby
+class GreetingAgent < Agent99::Base
+  TYPE = :server  # This agent responds to requests
+
+  def capabilities
+    %w[ greet welcome ]  # List of supported actions
+  end
+
+  def receive_request(message)
+    case message.payload[:action]
+    when 'greet'
+      send_response({
+        greeting: "Hello, #{message.payload[:name]}!"
+      })
+    when 'welcome'
+      send_response({
+        greeting: "Welcome to Agent99, #{message.payload[:name]}!"
+      })
+    else
+      handle_error(message, "Unsupported action: #{message.payload[:action]}")
+    end
+  end
+
+  def init
+    # Any initialization code
+    @logger.info "GreetingAgent initialized"
+  end
+
+  def fini
+    # Cleanup code
+    @logger.info "GreetingAgent shutting down"
+  end
+end
+```
+
+Each agent subclass is responsible for specific methods that define its unique capabilities and how it handles requests. The capabilities method defines what actions the agent can perform:
 
 ```ruby
 def capabilities = %w[ greeter hello_world ]
@@ -92,7 +133,7 @@ Designing agents with SRP in mind fosters modularity and reusability, allowing c
 
 ## Agent99 as a Reference Framework
 
-In its current iteration, the Agent99 Framework does not differ conceptually from other micro-service archecture implementations. It enables centralized registration where agents list their capabilities for other agents or applications to discover. Agent communications occur via a distributed messaging system.  The agent99 Ruby gem currently uses AMQP (via the Bunny gem and the RabbitMQ broker) and the NATS-server.
+In its current iteration, the Agent99 Framework does not differ conceptually from other micro-service architecture implementations. It enables centralized registration where agents list their capabilities for other agents or applications to discover. Agent communications occur via a distributed messaging system.  The agent99 Ruby gem currently uses AMQP (via the Bunny gem and the RabbitMQ broker) and the NATS-server.
 
 ### Agent Structure
 
@@ -116,7 +157,33 @@ It supports three core operations:
 
 ![Central Registry Process](/assets/images/agent_registry_process.png)
 
-Agents register by providing their information (e.g., name and capabilities) to the registry service. Upon successful registration, they receive a universally unique ID (UUID) that identifies them in the system.
+Agents register by providing their information (e.g., name and capabilities) to the registry service. Here's how registration works in practice:
+
+```ruby
+# Conceptual ...
+# TODO: implement as an LLM Tool - TBD
+class WeatherAgent < Agent99::Base
+  TYPE = :server
+
+  def capabilities
+    %w[ get_temperature get_forecast ]
+  end
+
+  def receive_request(message)
+    case message.action
+    when 'get_temperature'
+      { temperature: 72, unit: 'F' }
+    when 'get_forecast'
+      { forecast: 'Sunny with a chance of rain' }
+    end
+  end
+end
+
+# Start the agent
+WeatherAgent.new.run
+```
+
+Upon successful registration, agents receive a universally unique ID (UUID) that identifies them in the system. The registration process is handled automatically by the Agent99 framework when you call `register_agent`.
 
 #### 2. Discover
 
@@ -128,7 +195,41 @@ When an agent needs to exit the system, it withdraws its registration using its 
 
 ### Messaging Network
 
-The Ruby implementation of Agent99 currently focuses on AMQP messaging systems. Messages are formatted as JSON structures that adhere to defined schemas, allowing the **MessageClient** to validate messages effortlessly. Invalidated messages return to the sender without invoking agent-specific processes. 
+The Ruby implementation of Agent99 currently focuses on AMQP messaging systems. Messages are formatted as JSON structures that adhere to defined schemas, allowing the **MessageClient** to validate messages effortlessly. Here's an example of sending a request to our GreetingAgent:
+
+```ruby
+# Conceptual ...
+class ClientAgent < Agent99::Base
+  TYPE = :client  # This agent only sends requests
+
+  def init
+    @greeter_uuid = discover_agent_by_capability('greet').first
+    raise "No greeting agent found!" unless @greeter_uuid
+  end
+
+  def greet_someone(name)
+    request = {
+      header: build_header(to_uuid: @greeter_uuid),
+      payload: {
+        action: 'greet',
+        name: name
+      }
+    }
+
+    send_request(request)
+  end
+
+  def receive_response(response)
+    @logger.info "Got response: #{response.payload[:greeting]}"
+  end
+end
+
+# Usage example:
+client = ClientAgent.new
+client.run  # Starts the agent event loop
+```
+
+Messages are validated against defined schemas, and invalidated messages return to the sender without invoking agent-specific processes.
 
 Message types within the framework include:
 
@@ -168,4 +269,4 @@ Messages are queued with a 60-second TTL (Time To Live) to prevent buildup from 
 
 For further exploration, check out the documentation of the current Ruby implementation at [GitHub](https://github.com/MadBomber/agent99).
 
-Contributions to this initial Ruby reference implementation are welcome! It would be exciting to see additional language implementations. Anyone interested in creating APL, PL-1, or Ada versions?
+Contributions to this initial Ruby reference implementation are welcome! It would be exciting to see additional language implementations. Anyone interested in creating APL, PL-1, or Ada versions?  Me neither.
