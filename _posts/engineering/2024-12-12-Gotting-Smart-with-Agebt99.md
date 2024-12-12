@@ -11,8 +11,6 @@ tags:
 
 Welcome to the first article in a series that introduces the Ruby gem [**agent99**](https://rubygems.org/gems/agent99), which provides a reference implementation framework for the execution and management of software agents. If you're eager to jump right in, feel free to visit the [software repository](https://github.com/MadBomber/agent99).
 
-> **NOTE:** Some of the Ruby agent code shown in this article is conceptual. For the most up-to-date and complete examples, please refer to the [agent99 repo](https://github.com/MadBomber/agent99/tree/main/examples).
-
 ## Background
 
 I've been developing software systems since I wrote my first computer program in the fall of 1970. It was a one-liner in APL - A Programming Language. Of course, all programs in APL are essentially one-liners. I'm very happy that I've been using Ruby since 2005.
@@ -178,6 +176,9 @@ It supports three core operations:
 Agents register by providing their information (e.g., name and capabilities) to the registry service. Here's how registration works in practice:
 
 ```ruby
+# A Notional idea in which agent parameters have accessor
+# functions and have multiple responsibilities (shutter)
+# a clear violation of SRP.
 class WeatherAgent < Agent99::Base
   TYPE = :server
 
