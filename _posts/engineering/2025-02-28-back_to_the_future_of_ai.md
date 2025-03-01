@@ -1,3 +1,11 @@
+---
+title: "Back to the Future of AI"
+categories:
+  - Engineering
+tags:
+  - History
+---
+
 ## Back to the Future of AI
 
 The dream of creating machines that can think, reason, and learn has captivated thinkers for centuries. While the term "Artificial Intelligence" was officially coined in the mid-20th century, its roots delve deeper, into the realms of logic, philosophy, and mathematics. The history of AI is far more complex, and here is a summary to get you started.
