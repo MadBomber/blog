@@ -3,6 +3,9 @@ source "https://rubygems.org"
 
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
+gem 'nokogiri', '~> 1.18.0' # 1.17.1 had errors
+gem 'mutex_m'
+
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
