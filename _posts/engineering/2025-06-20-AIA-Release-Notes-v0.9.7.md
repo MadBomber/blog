@@ -10,7 +10,7 @@ tags:
 ---
 **Powerful New Features for Enhanced AI-Powered Prompt Management**
 
-<img src="/assets/images/high_level_architecture.png" alt="May I take your prompt?">
+<img src="{{ site.baseurl }}/assets/images/aia.png" alt="May I take your prompt?">
 
 The AI Assistant (AIA) CLI tool has evolved significantly since version 0.8.6, introducing powerful new capabilities that make it even more versatile for dynamic prompt management and AI interaction. Here's a comprehensive look at the major features and improvements that have been added.
 
