@@ -6,6 +6,7 @@ tags:
   - Prompt Engineering
   - Ruby
   - gem
+  - aia
 ---
 Pre-compositional templating of prompts using AIA endows prompt engineers with a significant level of power typically reserved for specialized gen-AI applications. AIA is a versatile command-line utility, with capabilities limited only by the imagination behind the prompts you create.
 
@@ -380,7 +381,7 @@ By nature, large language models (LLMs) have a historical cut-off for training d
 <%
   require 'alphavantagerb'
   stock_info      = Alphavantage::Stock.new(
-                      symbol: 'AAPL', 
+                      symbol: 'AAPL',
                       key:    "your api key").quote
   current_price   = stock_info.price
   change          = stock_info.change
@@ -444,4 +445,3 @@ The AIA tool is a command-line interface designed to enable users to interact wi
 - The manual references additional documentation for OpenAI token access, as well as third-party CLI tools like `mods` and `sgpt` that integrate with AI services.
 
 Through this tool, users have the ability to create highly customized interactions with an AI backend, using a command-line environment for efficient and programmable access to AI processing capabilities.
-
