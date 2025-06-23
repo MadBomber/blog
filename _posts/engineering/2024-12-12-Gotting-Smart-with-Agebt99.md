@@ -7,9 +7,36 @@ tags:
   - Tools
 ---
 
-# Getting Smart with Agent99
+**Getting Smart with Agent99**
 
 Welcome to the first article in a series that introduces the Ruby gem [**agent99**](https://rubygems.org/gems/agent99), which provides a reference implementation framework for the execution and management of software agents. If you're eager to jump right in, feel free to visit the [software repository](https://github.com/MadBomber/agent99).
+
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [Background](#background)
+  - [Getting Started with Agent99](#getting-started-with-agent99)
+  - [What Is a Reference Implementation?](#what-is-a-reference-implementation)
+  - [Understanding Software Agents and the Single Responsibility Principle](#understanding-software-agents-and-the-single-responsibility-principle)
+  - [What Are Software Agents?](#what-are-software-agents)
+  - [The Single Responsibility Principle (SRP)](#the-single-responsibility-principle-srp)
+    - [Why SRP Matters](#why-srp-matters)
+    - [Applying SRP in Software Development](#applying-srp-in-software-development)
+  - [Alignment of Agents and SRP](#alignment-of-agents-and-srp)
+  - [Agent99 as a Reference Framework](#agent99-as-a-reference-framework)
+    - [Agent Structure](#agent-structure)
+    - [Centralized Registry](#centralized-registry)
+      - [1. Register](#1-register)
+      - [2. Discover](#2-discover)
+      - [3. Withdraw](#3-withdraw)
+    - [Messaging Network](#messaging-network)
+      - [Request Messages](#request-messages)
+      - [Response Messages](#response-messages)
+      - [Control Messages](#control-messages)
+  - [Additional Resources](#additional-resources)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
 
 ## Background
 

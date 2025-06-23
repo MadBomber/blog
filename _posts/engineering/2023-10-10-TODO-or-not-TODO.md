@@ -7,6 +7,20 @@ tags:
 ---
 It's an exciting time for software engineering. In this emerging era of generative AI, developers can refactor their approach to crafting code from scratch. The traditionally laborious task of going from concept to working code can now be significantly reduced. By using a pre-programmed Gen-AI, software engineers can conveniently get a first draft of their intended code.
 
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [The Gen-AI Prompt in Focus](#the-gen-ai-prompt-in-focus)
+  - [How Does It Work?](#how-does-it-work)
+  - [Do We Now Have AIDD Joining BDD and TDD?](#do-we-now-have-aidd-joining-bdd-and-tdd)
+    - [Leveraging AI for the First Draft of Code](#leveraging-ai-for-the-first-draft-of-code)
+  - [Wrapping Up](#wrapping-up)
+  - [Example](#example)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
+
 ## The Gen-AI Prompt in Focus
 
 I use a great little utility on the command line to run my prompts. It is actually wrapped in my own parameterized prompt management system. In that system, any phrase like `[UPPERCASE]` is considered a parameter. All unique parameters are presented to the user for a value. That value is then substituted back into the prompt to form the actual prompt that gets presented to the Gen-AI.
@@ -101,4 +115,3 @@ class Utility
   end
 end
 ```
-

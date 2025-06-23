@@ -1,0 +1,5 @@
+label: "## Table of Contents"
+patterns:
+  - _posts/*.md
+  - _posts/engineering/*.md
+root_dir: "."

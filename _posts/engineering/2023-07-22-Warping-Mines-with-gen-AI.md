@@ -5,9 +5,36 @@ categories:
 tags:
   - Prompt Engineering
 ---
+**Warping Mines with gen-AI**
+
 Use a bottom-up design approach when crafting gen-AI prompts. Use a small context in the prompts. Baby steps will still get you to where you are going. Have fun. Software is not hard. Neither is AI.
 
 I have been working with various artificial intelligence (another term for mostly stupid according to my friend Squirrel) techniques both personally and professionally for about 40 years.
+
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [The Rise of NLP and gen-AI](#the-rise-of-nlp-and-gen-ai)
+  - [Exploring Warp](#exploring-warp)
+    - [Warp: Your Terminal, Reimagined](#warp-your-terminal-reimagined)
+    - [GitHub - charmbracelet/mods](#github---charmbraceletmods)
+  - [Crafting Prompts for gen-AI](#crafting-prompts-for-gen-ai)
+    - [GIGO — Garbage In, Garbage Out](#gigogarbage-in-garbage-out)
+  - [Example Prompts](#example-prompts)
+    - [Prompt 1](#prompt-1)
+    - [Prompt 2](#prompt-2)
+    - [Enhancing my_sort](#enhancing-my_sort)
+    - [Documenting my_sort](#documenting-my_sort)
+    - [Creating a Test File for my_sort Using Minitest](#creating-a-test-file-for-my_sort-using-minitest)
+  - [Trying Something Off the Wall](#trying-something-off-the-wall)
+    - [Convert my_sort and Its Test File into Python](#convert-my_sort-and-its-test-file-into-python)
+    - [Now Convert It to Java](#now-convert-it-to-java)
+    - [Convert my_sort to COBOL](#convert-my_sort-to-cobol)
+  - [Bottom Line](#bottom-line)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 
 ## The Rise of NLP and gen-AI
 
@@ -27,7 +54,7 @@ For the last few months, I've been trying out **Warp**, which has the ability to
 
 Warp is a modern, Rust-based terminal with AI built in so you and your team can build great software, faster. Now… [warp.dev](https://www.warp.dev)
 
-I've also been using "mods" on the command line. 
+I've also been using "mods" on the command line.
 
 ### GitHub - charmbracelet/mods
 
@@ -249,4 +276,3 @@ PROCEDURE DIVISION USING ARRAY-SIZE, ARRAY.
 ## Bottom Line
 
 GIGO is alive and well in the 21st century. Use a bottom-up design approach when crafting gen-AI prompts. Use a small context in the prompts. Baby steps will still get you to where you are going. Have fun. Software is not hard. Neither is AI.
-

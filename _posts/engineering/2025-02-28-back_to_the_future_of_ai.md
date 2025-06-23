@@ -6,9 +6,23 @@ tags:
   - History
 ---
 
-## Back to the Future of AI
+**Back to the Future of AI**
 
 The dream of creating machines that can think, reason, and learn has captivated thinkers for centuries. While the term "Artificial Intelligence" was officially coined in the mid-20th century, its roots delve deeper, into the realms of logic, philosophy, and mathematics. The history of AI is far more complex, and here is a summary to get you started.
+
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+- [Early Explorations](#early-explorations)
+- [Neural Networks](#neural-networks)
+- [The Statistical Revolution](#the-statistical-revolution)
+- [The Age of Large Language Models](#the-age-of-large-language-models)
+- [Conclusion](#conclusion)
+- [References](#references)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 
 ### Early Explorations
 **Reasoning and Rule-Based Systems (1950s-1980s)**

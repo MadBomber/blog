@@ -12,30 +12,42 @@ Pre-compositional templating of prompts using AIA endows prompt engineers with a
 
 A pre-compositional prompt acts as a foundational template, which can be expanded into a fully fleshed-out prompt. This prompt is then handed off to a generative AI processor to transform into a response that meets your specific requirements.
 
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
 ## Table of Contents
-- [Introduction](#introduction)
-- [Large Language Models (LLM)](#large-language-models-llm)
-- [Running AIA](#running-aia)
-- [Set Up a Prompts Directory](#set-up-a-prompts-directory)
-- [AIA Supports Parameterized Prompts](#aia-supports-parameterized-prompts)
-- [Create a Parameterized Prompt](#create-a-parameterized-prompt)
-- [The Next Parts](#the-next-parts)
-- [Comments](#comments)
-  - [Line Comments](#line-comments)
-  - [End of File Block Comment](#end-of-file-block-comment)
-- [Directives](#directives)
-  - [The config Directive](#the-config-directive)
-  - [Parameter Substitution in Directives](#parameter-substitution-in-directives)
-- [Shell Integration](#shell-integration)
-  - [Accessing System Environment Variables](#accessing-system-environment-variables)
-  - [Contextual System Environment Variables](#contextual-system-environment-variables)
-  - [Invoking Shell Commands](#invoking-shell-commands)
-- [Harnessing Ruby's Capabilities](#harnessing-rubys-capabilities)
-  - [The Concept of Binding](#the-concept-of-binding)
-  - [ERB Syntax at a Glance](#erb-syntax-at-a-glance)
-  - [Conditional Logic](#conditional-logic)
-  - [Accessing Current Data](#accessing-current-data)
-- [Summary of AIA Command-Line Tool](#summary-of-aia-command-line-tool)
+
+  - [Introduction](#introduction)
+  - [Large Language Models (LLM)](#large-language-models-llm)
+  - [Running AIA](#running-aia)
+  - [Set Up a Prompts Directory](#set-up-a-prompts-directory)
+  - [AIA Supports Parameterized Prompts](#aia-supports-parameterized-prompts)
+  - [Create a Parameterized Prompt](#create-a-parameterized-prompt)
+  - [The Next Parts](#the-next-parts)
+  - [Comments](#comments)
+    - [Line Comments](#line-comments)
+    - [End of File Block Comment](#end-of-file-block-comment)
+  - [Directives](#directives)
+    - [The config Directive](#the-config-directive)
+    - [Parameter Substitution in Directives](#parameter-substitution-in-directives)
+  - [Shell Integration](#shell-integration)
+    - [Accessing System Environment Variables](#accessing-system-environment-variables)
+    - [Contextual System Environment Variables](#contextual-system-environment-variables)
+    - [Invoking Shell Commands](#invoking-shell-commands)
+  - [Harnessing Ruby's Capabilities](#harnessing-rubys-capabilities)
+    - [The Concept of Binding](#the-concept-of-binding)
+    - [ERB Syntax at a Glance](#erb-syntax-at-a-glance)
+    - [Conditional Logic](#conditional-logic)
+    - [Accessing Current Data](#accessing-current-data)
+  - [Summary of AIA Command-Line Tool](#summary-of-aia-command-line-tool)
+    - [Key features of the AIA tool based on the user manual:](#key-features-of-the-aia-tool-based-on-the-user-manual)
+    - [Options Available:](#options-available)
+    - [Configuration Hierarchy:](#configuration-hierarchy)
+    - [OpenAI Account Requirement:](#openai-account-requirement)
+    - [Usage and Integration:](#usage-and-integration)
+    - [Prompt Directives:](#prompt-directives)
+    - [Additional Information and Third-Party Tools:](#additional-information-and-third-party-tools)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
 
 ## Introduction
 

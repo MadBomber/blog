@@ -13,11 +13,30 @@ We stand on the brink of a new era in software development. Understanding and ma
 
 The traditional paradigms of software engineering have long revolved around writing explicit code in programming languages such as Python, Java, or C++. However, with the advent of generative AI, a new paradigm is emerging where the focus shifts from writing code to crafting effective prompts. This shift not only democratizes access to software development but also opens up new avenues for creativity and innovation.
 
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [1. Introduction](#1-introduction)
+  - [2. A Brief History of Programming Languages](#2-a-brief-history-of-programming-languages)
+  - [3. Higher-Order Languages (HOL)](#3-higher-order-languages-hol)
+  - [4. The Concept of Prompts in Software Development](#4-the-concept-of-prompts-in-software-development)
+    - [4.1 Input-Process-Output](#41-input-process-output)
+    - [4.2 Callback Functions](#42-callback-functions)
+  - [5. Prompts as a Higher-Order Language](#5-prompts-as-a-higher-order-language)
+    - [5.1 Navigating the Challenges of Prompt Engineering](#51-navigating-the-challenges-of-prompt-engineering)
+    - [5.2 The Importance of Context and Iteration in Prompt Design](#52-the-importance-of-context-and-iteration-in-prompt-design)
+    - [5.3 Applying Software Engineering Principles to Enhance Prompt Effectiveness](#53-applying-software-engineering-principles-to-enhance-prompt-effectiveness)
+  - [6. Choosing LLMs for Diverse Activities](#6-choosing-llms-for-diverse-activities)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
+
 ## 1. Introduction
 
-In the expansive universe of *Star Trek*, the Holodeck stands as a remarkable testament to the potential of future technology, embodying the seamless integration of artificial intelligence and immersive experiences. Within this virtual realm, any crew member can simply walk in and vocally request the computer to conjure up a fully interactive environment tailored to their desires—be it a serene landscape, a bustling city, or a historical event. 
+In the expansive universe of *Star Trek*, the Holodeck stands as a remarkable testament to the potential of future technology, embodying the seamless integration of artificial intelligence and immersive experiences. Within this virtual realm, any crew member can simply walk in and vocally request the computer to conjure up a fully interactive environment tailored to their desires—be it a serene landscape, a bustling city, or a historical event.
 
-> This intuitive form of programming, where spoken language serves as the primary interface, represents a paradigm shift in how humans interact with technology. 
+> This intuitive form of programming, where spoken language serves as the primary interface, represents a paradigm shift in how humans interact with technology.
 
 Instead of relying on complex coding languages and intricate commands, the Holodeck exemplifies a future where creativity and imagination are the only limits, allowing developers and users to engage with advanced systems through natural dialogue.
 
@@ -85,7 +104,7 @@ For instance, when a prompt is designed to gather user input or perform a specif
 
 This concept aligns closely with the principles of a Foreign Function Interface (FFI) or an Application Programming Interface (API). An FFI allows a program written in one programming language to call functions or use services written in another language, while an API provides a set of rules and protocols for building and interacting with software applications. By leveraging callbacks in prompts, developers can effectively create a bridge between the AI model and external services or libraries, enabling seamless integration of diverse functionalities. For example, a prompt could utilize an API to access machine learning models for specific tasks, such as image recognition or natural language processing, and then use the results as input for further prompts.
 
-> The use of callback functions in prompt engineering allows for dynamic context augmentation, enhancing the interactivity and relevance of AI responses. 
+> The use of callback functions in prompt engineering allows for dynamic context augmentation, enhancing the interactivity and relevance of AI responses.
 
 By integrating this capability with FFIs and APIs, developers can create sophisticated systems that leverage external data and services, resulting in a more powerful and versatile interaction model. This approach not only improves the quality of the output but also expands the potential applications of prompt engineering in various domains.
 
@@ -129,7 +148,7 @@ Finally, the Dependency Inversion Principle can be applied by designing prompts 
 
 LLMs are fine-tuned to excel in various activities by adjusting their architecture, training data, and specific algorithms. For instance, OpenAI's TTS-1 is designed for text-to-speech applications, while Whisper-1 is tailored for speech-to-text functionalities. The crafting of prompts for these various LLMs is crucial, as each model requires specific input to achieve the desired output.
 
-> The relationship between prompts and LLMs mirrors the interaction between programming languages and their standard libraries. 
+> The relationship between prompts and LLMs mirrors the interaction between programming languages and their standard libraries.
 
 Both serve to simplify complex tasks and enhance productivity. Just as a standard library provides pre-written code for common tasks, LLMs offer built-in capabilities for text generation, summarization, and more, allowing developers to focus on crafting effective prompts.
 

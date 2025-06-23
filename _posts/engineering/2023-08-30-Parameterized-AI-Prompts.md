@@ -7,10 +7,22 @@ tags:
   - Ruby
   - gem
 ---
+**Parameterized AI Prompts**
+
 Over the last few days, I have created a simple Ruby program called `aip.rb` in my scripts repository on GitHub. This program allows me to run stored gen-AI prompts against input text files and generate an output. The program follows the input-process-output (IPO) paradigm, but since AI is involved, it adheres to the principle of "garbage in, garbage out," as my friend @Squirrel would say. The AI processing part is handled by `mods`, a CLI tool that provides access to OpenAI's GPT-4 large language model (LLM). The Ruby code manipulates the command parameters, executes the command, and saves the output to a file.
 
 - **GitHub:** [aip.rb at MadBomber/scripts](https://github.com/MadBomber/scripts)
 - **GitHub mods:** [charmbracelet/mods](https://github.com/charmbracelet/mods)
+
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [Prompt Files and Keyword Replacement](#prompt-files-and-keyword-replacement)
+  - [Reflections on Past Programming Endeavors](#reflections-on-past-programming-endeavors)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 
 ## Prompt Files and Keyword Replacement
 

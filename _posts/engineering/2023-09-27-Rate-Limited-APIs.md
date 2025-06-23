@@ -6,8 +6,38 @@ tags:
   - Ruby
   - gem
 ---
-<!-- # Rate Limited APIs -->
+**Rate Limited APIs**
+
 Rate limited APIs are both a blessing and a curse depending upon which side of the interaction you are on. On the server-side, they can protect your backend from the abuse of limited resources. From the client-side, they interfere with your ability to get work done. Poorly chosen rates can make everyone unhappy.
+
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [What are Rate Limited APIs?](#what-are-rate-limited-apis)
+  - [Server-Side Perspective](#server-side-perspective)
+    - [Importance of Rate Limiting](#importance-of-rate-limiting)
+      - [Preventing Overload](#preventing-overload)
+      - [Protecting Resources](#protecting-resources)
+      - [Throttling Traffic](#throttling-traffic)
+      - [Enhancing Security](#enhancing-security)
+      - [Supporting the Sale of Paid Plans](#supporting-the-sale-of-paid-plans)
+  - [Client-Side Perspective](#client-side-perspective)
+    - [Challenges and Considerations for Client-Side Developers](#challenges-and-considerations-for-client-side-developers)
+    - [Advantages of Rate Limited APIs](#advantages-of-rate-limited-apis)
+      - [Cost-Effective Access](#cost-effective-access)
+    - [Considerations for Client-Side Developers](#considerations-for-client-side-developers)
+      - [Managing Expectations](#managing-expectations)
+      - [Developing Workarounds](#developing-workarounds)
+  - [API Libraries Often Ignore Rate Limits](#api-libraries-often-ignore-rate-limits)
+    - [Rate Limit Considerations for API Wrapper Libraries](#rate-limit-considerations-for-api-wrapper-libraries)
+      - [Rate Limit Awareness](#rate-limit-awareness)
+      - [Shopify's Rate Limiter Library](#shopifys-rate-limiter-library)
+      - [Custom API Key Management](#custom-api-key-management)
+  - [Conclusion](#conclusion)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 
 ## What are Rate Limited APIs?
 
@@ -86,4 +116,3 @@ This is the approach that I recently took with my `ApiKeyManager::Rate` class. I
 ## Conclusion
 
 While rate limited APIs may present challenges, it's crucial for both server-side and client-side developers to understand their importance and effectively handle rate limits. By considering the benefits of rate limiting and developing strategies to work within the limitations, developers can strike a balance between resource protection and efficient data access. Remember, securing paid plans can provide access to higher rates, allowing your product to prosper. Embrace rate limitations as opportunities for growth and success.
-

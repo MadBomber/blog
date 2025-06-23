@@ -11,6 +11,29 @@ With the advent of Generative AI, managing a vast number of AI prompts has becom
 
 To see how the `prompt_manager` gem's `FileSystemAdapter` is used in a CLI application, take a look at the [AI Assistant (aia) gem](#).
 
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [Using the `prompt_manager`](#using-the-prompt_manager)
+  - [Setup and Configuration](#setup-and-configuration)
+    - [Setup a Directory for Playing](#setup-a-directory-for-playing)
+  - [Starting an IRB Session](#starting-an-irb-session)
+  - [Working with Prompts in IRB](#working-with-prompts-in-irb)
+    - [Listing Prompts](#listing-prompts)
+    - [Accessing Prompts](#accessing-prompts)
+    - [Access the Prompt Text Content](#access-the-prompt-text-content)
+    - [Retrieving Prompts](#retrieving-prompts)
+    - [Saving Prompts](#saving-prompts)
+    - [Deleting Prompts](#deleting-prompts)
+    - [Searching for Prompts](#searching-for-prompts)
+  - [Parameterized Prompts](#parameterized-prompts)
+    - [Parameter Values for Keywords](#parameter-values-for-keywords)
+  - [Customization and Extensibility](#customization-and-extensibility)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
+
 ## Using the `prompt_manager`
 
 The `PromptManager::Storage::FileSystemAdapter` class is a cornerstone of the `prompt_manager` gem that interfaces with local or remote file systems, enabling developers to manage prompts effortlessly. The implementation offers various methods to administer prompts, such as listing, searching, getting, saving, deleting, and substituting parameter values for embedded keywords within the prompt text.
@@ -38,7 +61,7 @@ require 'prompt_manager'
 require 'prompt_manager/storage/file_system_adapter'
 
 PROMPTS_DIR = Pathname.new ENV['PROMPTS_DIR']
-PromptManager::Prompt.storage_adapter = 
+PromptManager::Prompt.storage_adapter =
   PromptManager::Storage::FileSystemAdapter.config do |config|
     config.prompts_dir        = PROMPTS_DIR
     config.prompt_extension   = '.txt'  # default
@@ -57,7 +80,7 @@ require 'word_wrap'
 require 'prompt_manager'
 require 'prompt_manager/storage/file_system_adapter'
 
-PromptManager::Prompt.storage_adapter = 
+PromptManager::Prompt.storage_adapter =
   PromptManager::Storage::FileSystemAdapter.config do |config|
     config.prompts_dir = ENV['PROMPTS_DIR']
   end.new
@@ -176,4 +199,3 @@ The purpose of having an Array of historical values used for a keyword is to all
 Developers can extend the capabilities of the file system adapter by defining a custom `search_proc` or modifying file extensions for reading and saving prompts and their parameters.
 
 Using the `prompt_manager` gem simplifies the Generative AI prompt management by organizing them in a file system construct, which enhances productivity and enables a smoother workflow for Ruby developers. Its customizable and extensible design ensures that it can adapt to various project needs, making it a must-have tool in your Ruby AI toolkit.
-
