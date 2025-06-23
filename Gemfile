@@ -6,6 +6,11 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'nokogiri', '~> 1.18.0' # 1.17.1 had errors
 gem 'mutex_m'
 
+group :development  do
+  gem 'tocer'
+  gem 'rake'
+end
+
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

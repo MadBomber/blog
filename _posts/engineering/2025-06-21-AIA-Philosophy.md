@@ -11,6 +11,63 @@ tags:
 
 **The Prompt is the Code: A Power Tool Philosophy for AI Integration**
 
+AIA (AI Assistant) is a command-line interface (CLI) written in Ruby, designed to be a powerful, flexible, and scriptable partner for your daily tasks. This article is the second in a comprehensive series providing a deep dive into the AIA CLI, focusing on its non-interactive "batch mode" — the foundation of AIA's powerful AI processing capabilities. The example prompts used in this article are for illustration purposes. While AIA is a daily tool for my software development activities along with claude code and aider, AIA is also a powerful business and recreational tool.  Like any coding language, AIA's batch mode is domain agnostic.  Whether you use it to review or develop software source code, write documentation, or generate content for marketing materials, AIA's batch mode can help you automate tasks and streamline your workflow.
+
+
+**Series Articles:**
+
+1.  **The Philosophy of Prompt-Driven Development with AIA**
+2.  [Mastering AIA's Batch Mode: From Simple Questions to Complex Workflows](https://madbomber.github.io/blog/engineering/AIA-Batch-Mode/)
+3.  [Building AI Workflows: AIA's Prompt Sequencing and Pipelines](#) *(Coming Soon)*
+4.  [Interactive AI Sessions: AIA's Chat Mode Deep Dive](#) *(Coming Soon)*
+5.  [Extending AIA: Custom Tools and Function Callbacks](#) *(Coming Soon)*
+
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [Introduction: The Problem with Embedded Prompts](#introduction-the-problem-with-embedded-prompts)
+  - [The Command-Line Power Tool Approach](#the-command-line-power-tool-approach)
+    - [Single Responsibility Principle](#single-responsibility-principle)
+    - [The Experimentation Platform](#the-experimentation-platform)
+  - [The Traditional Trap: Embedded Prompts](#the-traditional-trap-embedded-prompts)
+    - [The Familiar Anti-Pattern](#the-familiar-anti-pattern)
+    - [The Hidden Costs](#the-hidden-costs)
+  - [AIA's Philosophy: Code in Prompts](#aias-philosophy-code-in-prompts)
+    - [Prompts as Executable Scripts](#prompts-as-executable-scripts)
+    - [The Power of Dynamic Adaptation](#the-power-of-dynamic-adaptation)
+  - [Better Architecture: Database-Stored Templates](#better-architecture-database-stored-templates)
+    - [Traditional Embedded Approach](#traditional-embedded-approach)
+    - [Database Template Approach](#database-template-approach)
+    - [AIA uses PromptManager](#aia-uses-promptmanager)
+    - [Benefits of This Hybrid Approach](#benefits-of-this-hybrid-approach)
+  - [Command-Line First Philosophy](#command-line-first-philosophy)
+    - [Unix Pipeline Integration](#unix-pipeline-integration)
+    - [Individual Developer Workflow](#individual-developer-workflow)
+  - [Practical Examples: The Developer's Toolkit](#practical-examples-the-developers-toolkit)
+    - [Rapid Prompt Iteration](#rapid-prompt-iteration)
+    - [Model Comparison and Optimization](#model-comparison-and-optimization)
+    - [Personal Automation](#personal-automation)
+  - [The Experimentation Advantage](#the-experimentation-advantage)
+    - [Comparing Approaches](#comparing-approaches)
+    - [Real-World Scenario](#real-world-scenario)
+  - [When to Use AIA vs. Traditional Approaches](#when-to-use-aia-vs-traditional-approaches)
+    - [Use AIA When:](#use-aia-when)
+    - [Use Traditional Embedding When:](#use-traditional-embedding-when)
+    - [The Hybrid Approach](#the-hybrid-approach)
+  - [Getting Started: Your First AIA Experiment](#getting-started-your-first-aia-experiment)
+    - [Installation](#installation)
+    - [Your First Dynamic Prompt](#your-first-dynamic-prompt)
+    - [Model Comparison Experiment](#model-comparison-experiment)
+  - [Looking Forward: The Command-Line AI Revolution](#looking-forward-the-command-line-ai-revolution)
+    - [Coming Next: "Mastering Batch Mode: Unix Pipelines Meet AI Intelligence"](#coming-next-mastering-batch-mode-unix-pipelines-meet-ai-intelligence)
+  - [Installation and Next Steps](#installation-and-next-steps)
+    - [Prerequisites](#prerequisites)
+    - [Quick Setup](#quick-setup)
+    - [Explore Further](#explore-further)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 ## Introduction: The Problem with Embedded Prompts
 
 Every developer has been there: you're building a web application that needs AI functionality, so you embed a prompt string directly in your code:

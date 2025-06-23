@@ -1,3 +1,20 @@
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+    - [Title Choices](#title-choices)
+    - [Overview](#overview)
+    - [Article Outline](#article-outline)
+      - [I. Introduction](#i-introduction)
+      - [II. Understanding Software Development Areas](#ii-understanding-software-development-areas)
+      - [III. The Demand for Specialization](#iii-the-demand-for-specialization)
+      - [IV. The Challenges of Being a "Fullstack Developer"](#iv-the-challenges-of-being-a-fullstack-developer)
+      - [V. Advantages of Specialization](#v-advantages-of-specialization)
+      - [VI. Bridging Specializations](#vi-bridging-specializations)
+      - [VII. Conclusion](#vii-conclusion)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 ---
 title: "No Such Thing as a Free Lunch or a Fullstack Developer"
 categories:

@@ -16,6 +16,43 @@ The AI Assistant (AIA) CLI tool has evolved significantly since version 0.8.6, i
 
 *The complete changelog and detailed documentation are available in the [AIA repository](https://github.com/MadBomber/aia) and [wiki](https://github.com/MadBomber/aia/wiki).*
 
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+  - [🛠️ Enhanced Tool Integration](#-enhanced-tool-integration)
+    - [RubyLLM::Tool Support](#rubyllmtool-support)
+    - [Shared Tools Integration](#shared-tools-integration)
+    - [New Tool Discovery Commands](#new-tool-discovery-commands)
+  - [🔍 Model Management & Discovery](#-model-management--discovery)
+    - [Available Models Command](#available-models-command)
+    - [Model Database Refresh](#model-database-refresh)
+  - [📄 Executable Prompts Revolution](#-executable-prompts-revolution)
+    - [Enhanced Executable Prompt Support](#enhanced-executable-prompt-support)
+    - [STDIN/STDOUT Integration](#stdinstdout-integration)
+  - [🌐 Web Content Integration](#-web-content-integration)
+    - [Dynamic Web Content Inclusion](#dynamic-web-content-inclusion)
+  - [🗣️ Improved Chat Experience](#-improved-chat-experience)
+    - [Enhanced Directive Processing](#enhanced-directive-processing)
+    - [Context Management](#context-management)
+  - [🔧 Configuration & Compatibility](#-configuration--compatibility)
+    - [Better Model Compatibility](#better-model-compatibility)
+    - [Ruby LLM Migration](#ruby-llm-migration)
+  - [🐛 Critical Bug Fixes](#-critical-bug-fixes)
+    - [Output Handling](#output-handling)
+    - [Directive Processing](#directive-processing)
+  - [📈 Performance & Reliability](#-performance--reliability)
+    - [Code Architecture Improvements](#code-architecture-improvements)
+    - [Enhanced Logging & Debugging](#enhanced-logging--debugging)
+  - [🔐 Security Enhancements](#-security-enhancements)
+    - [Shell Command Safety](#shell-command-safety)
+  - [🎯 Developer Experience](#-developer-experience)
+    - [Testing Infrastructure](#testing-infrastructure)
+    - [Documentation](#documentation)
+  - [Getting Started with the New Features](#getting-started-with-the-new-features)
+  - [Looking Forward](#looking-forward)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
 
 ## 🛠️ Enhanced Tool Integration
 

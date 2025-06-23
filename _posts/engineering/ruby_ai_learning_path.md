@@ -1,3 +1,30 @@
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+- [Ruby AI Learning Path](#ruby-ai-learning-path)
+  - [Level 1: Fundamentals](#level-1-fundamentals)
+    - [Understanding AI Concepts](#understanding-ai-concepts)
+    - [Getting Started with API-Based AI](#getting-started-with-api-based-ai)
+    - [Practical Exercise](#practical-exercise)
+  - [Level 2: Intermediate](#level-2-intermediate)
+    - [Prompt Engineering for Ruby Developers](#prompt-engineering-for-ruby-developers)
+    - [Data Processing with Ruby](#data-processing-with-ruby)
+    - [AI-Enhanced Rails Applications](#ai-enhanced-rails-applications)
+    - [Practical Exercise](#practical-exercise-1)
+  - [Level 3: Advanced](#level-3-advanced)
+    - [Building AI Agents in Ruby](#building-ai-agents-in-ruby)
+    - [Fine-Tuning Models for Ruby Applications](#fine-tuning-models-for-ruby-applications)
+    - [Production Deployment](#production-deployment)
+    - [Practical Exercise](#practical-exercise-2)
+  - [Resources](#resources)
+    - [Books](#books)
+    - [Online Courses](#online-courses)
+    - [Community](#community)
+  - [Final Thoughts on Ruby's Place in the AI Landscape](#final-thoughts-on-rubys-place-in-the-ai-landscape)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 # Ruby AI Learning Path
 
 Ready to infuse your Ruby applications with artificial intelligence? This curated learning path provides a structured guide for Ruby developers of all levels to master AI integration. From basic API usage to advanced agent frameworks and deployment strategies, this path will equip you with the skills and knowledge to build intelligent and innovative solutions. Get ready to unlock the power of AI in your Ruby projects!
