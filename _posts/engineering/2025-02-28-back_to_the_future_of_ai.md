@@ -14,12 +14,12 @@ The dream of creating machines that can think, reason, and learn has captivated 
 
 ## Table of Contents
 
-- [Early Explorations](#early-explorations)
-- [Neural Networks](#neural-networks)
-- [The Statistical Revolution](#the-statistical-revolution)
-- [The Age of Large Language Models](#the-age-of-large-language-models)
-- [Conclusion](#conclusion)
-- [References](#references)
+    - [Early Explorations](#early-explorations)
+    - [Neural Networks](#neural-networks)
+    - [The Statistical Revolution](#the-statistical-revolution)
+    - [The Age of Large Language Models](#the-age-of-large-language-models)
+    - [Conclusion](#conclusion)
+    - [References](#references)
 
 <!-- Tocer[finish]: Auto-generated, don't remove. -->
 
