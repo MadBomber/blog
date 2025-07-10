@@ -19,8 +19,8 @@ In the evolving landscape of AI-assisted workflows, real-time interaction with A
 1. [The Philosophy of Prompt-Driven Development with AIA](https://madbomber.github.io/blog/engineering/AIA-Philosophy/)
 2. [Mastering AIA's Batch Mode: From Simple Questions to Complex Workflows](https://madbomber.github.io/blog/engineering/AIA-Batch-Mode/)
 3. [Building AI Workflows: AIA's Prompt Sequencing and Pipelines](https://madbomber.github.io/blog/engineering/AIA-Workflows/)
-4. **Interactive AI Sessions: Mastering AIA's Chat Mode** *(This Article)*
-5. [Extending AIA: Custom Tools and Function Callbacks](#) *(Coming Soon)*
+4. [Interactive AI Sessions: Mastering AIA's Chat Mode](https://madbomber.github.io/blog/engineering/AIA-Chat-Mode/)
+5. [From Dynamic Prompts to Advanced Tool Integration](https://madbomber.github.io/blog/engineering/AIA-Advanced-Tool-Integration/)
 
 <!-- Tocer[start]: Auto-generated, don't remove. -->
 

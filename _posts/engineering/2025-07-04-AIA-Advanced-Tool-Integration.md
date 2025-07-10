@@ -22,7 +22,7 @@ AIA can utilize the `shared_tools` Ruby gem, which provides a collection of pre-
 2. [Mastering AIA's Batch Mode: From Simple Questions to Complex Workflows](https://madbomber.github.io/blog/engineering/AIA-Batch-Mode/)
 3. [Building AI Workflows: AIA's Prompt Sequencing and Pipelines](https://madbomber.github.io/blog/engineering/AIA-Workflows/)
 4. [Interactive AI Sessions: Mastering AIA's Chat Mode](https://madbomber.github.io/blog/engineering/AIA-Chat-Mode/)
-5. **From Dynamic Prompts to Advanced Tool Integration** *(This Article)*
+5. [From Dynamic Prompts to Advanced Tool Integration](https://madbomber.github.io/blog/engineering/AIA-Advanced-Tool-Integration/)
 
 <!-- Tocer[start]: Auto-generated, don't remove. -->
 
