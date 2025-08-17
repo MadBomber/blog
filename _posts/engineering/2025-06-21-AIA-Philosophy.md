@@ -7,6 +7,8 @@ tags:
   - Ruby
   - gem
   - aia
+sidebar:
+  nav: aia_series
 ---
 
 **The Prompt is the Code: A Power Tool Philosophy for AI Integration**

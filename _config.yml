@@ -20,8 +20,24 @@ description: >- # this means to ignore newlines until "baseurl:"
   ignites conversation!
 twitter_username: madbomber0
 github_username: madbomber
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 search: true
+
+# Social Sharing
+twitter:
+  username: "madbomber0"
+
+# OpenGraph/Twitter Card defaults
+og_image: "/assets/images/aia.png"
+
+# Social sharing options
+social:
+  type: Person
+  name: "Dewayne VanHoozer"
+  links:
+    - "https://x.com/madbomber0"
+    - "https://github.com/MadBomber"
+    - "https://linkedin.com/in/dewayne-vanhoozer"
 
 # Build settings
 markdown: kramdown
@@ -31,7 +47,8 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+locale: "en-US"
 
 include:
   - _pages
@@ -67,19 +84,25 @@ author:
       url: "https://madbomber.github.io"
     - label: "X"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/"
+      url: "https://x.com/madbomber0"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/MadBomber"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/dewayne-vanhoozer"
 
 footer:
   links:
     - label: "X"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/"
+      url: "https://x.com/madbomber0"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/MadBomber"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/dewayne-vanhoozer"
 
 
 defaults:
@@ -91,9 +114,24 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      show_date: true
       comments: true
       share: true
       related: true
+  # _posts/engineering - Enable TOC for technical posts
+  - scope:
+      path: "_posts/engineering"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
   # _pages
   - scope:
       path: "_pages"
@@ -124,7 +162,10 @@ tag_archive:
 # gist:
 #   noscript: false
 #
-# kramdown:
-#   math_engine: mathjax
-#   syntax_highlighter: rouge
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 

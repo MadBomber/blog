@@ -1,0 +1,12 @@
+<nav class="nav__list">
+  <h3 class="nav__title">AIA Series</h3>
+  <ul>
+    {% for item in site.data.navigation.aia_series %}
+      <li>
+        <a href="{{ item.url | relative_url }}"{% if item.url == page.url %} class="current"{% endif %}>
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,9 +1,28 @@
 main:
   - title: "Posts"
     url: /posts/
+  - title: "Engineering"
+    url: /categories/#engineering
+  - title: "Ministry"
+    url: /categories/#ministry-online
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
   - title: "About"
     url: /about/
+
+# AIA Series Navigation
+aia_series:
+  - title: "AIA Philosophy"
+    url: /engineering/AIA-Philosophy/
+  - title: "Batch Mode"
+    url: /engineering/AIA-Batch-Mode/
+  - title: "Workflows"
+    url: /engineering/AIA-Workflows/
+  - title: "Chat Mode"
+    url: /engineering/AIA-Chat-Mode/
+  - title: "Advanced Tool Integration"
+    url: /engineering/AIA-Advanced-Tool-Integration/
+  - title: "Release Notes"
+    url: /engineering/AIA-Release-Notes-v0.9.7/
