@@ -77,6 +77,7 @@ plugins:
 author:
   name   : "Dewayne VanHoozer"
   avatar : "/assets/images/bio-photo.jpg"
+  home   : "https://linkedin.com/in/dewayne-vanhoozer"
   bio    : "Visionary leader with extensive technical expertise and a proven track record in steering complex projects to success."
   links:
     - label: "Website"
