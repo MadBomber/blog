@@ -27,6 +27,9 @@ aia --model "gpt-4,claude-3-sonnet,gemini-pro" analyze_project
 
 The technical implementation is elegant in its simplicity yet powerful in its capabilities. When you specify multiple models using comma-separated values, AIA's `RubyLLMAdapter` creates separate chat instances for each model and processes them concurrently. This means you're not waiting for sequential responses—all models work simultaneously, dramatically reducing total processing time while multiplying the intellectual firepower applied to your problem.
 
+![AIA Concurrent Processing Architecture](/assets/images/aia-concurrent-architecture.svg)
+*AIA's concurrent processing architecture enables multiple AI models to work simultaneously, dramatically reducing processing time while amplifying analytical power.*
+
 ### The Consensus Engine: Synthesizing Collective Intelligence
 
 What makes AIA's approach truly revolutionary is its consensus feature. Rather than simply presenting you with multiple disconnected responses, AIA can synthesize them into a unified, comprehensive answer that incorporates the best insights from all participating models.
@@ -45,6 +48,9 @@ The consensus engine works by having the primary model (the first in your list) 
 
 This process mirrors how human expert panels work, but at machine speed and with perfect recall of every detail from every participant.
 
+![AIA Consensus Engine Workflow](/assets/images/aia-consensus-engine.svg)
+*The consensus engine synthesizes multiple model responses into unified, comprehensive analysis through intelligent meta-processing.*
+
 ## Creative Applications: The Writer's Room in Your Terminal
 
 For creative professionals, AIA's multi-model capabilities open entirely new possibilities for collaborative creation. Imagine having a writer's room where each participant brings a different perspective, writing style, and creative approach—except this room is available 24/7 and costs mere pennies per session.
@@ -52,6 +58,9 @@ For creative professionals, AIA's multi-model capabilities open entirely new pos
 ### Character Development: Multiple Perspectives, Richer Characters
 
 When developing characters for a story, different AI models excel in different areas:
+
+![AI Model Strengths & Specializations](/assets/images/aia-model-comparison.svg)
+*Each AI model brings unique strengths: GPT-4 excels at creative structure, Claude-3-Sonnet provides consistency and depth, while Gemini-Pro offers analytical precision and cultural awareness.*
 
 - **GPT-4** brings strong narrative structure and psychological depth
 - **Claude-3-Sonnet** offers nuanced emotional intelligence and consistency
@@ -183,6 +192,9 @@ AIA's documentation provides guidance on optimal model selection for different t
 The true power of AIA's multi-model architecture emerges when you build workflows that leverage different models at different stages:
 
 ### Creative Writing Workflow
+
+![AIA Creative Writing Workflow](/assets/images/aia-creative-workflow.svg)
+*Strategic workflow combining consensus and individual modes for optimal creative output at each stage of story development.*
 
 ```bash
 # 1. Generate initial concepts with diverse perspectives
