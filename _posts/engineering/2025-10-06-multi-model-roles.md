@@ -1,6 +1,6 @@
 # Unleash the Power of Perspective: Multi-Model AI with Role-Based Collaboration
 
-![Multi-Model Robots with Different Hats](/assets/images/3_robots_with_hats.jpg)
+![Multi-Model Robots with Different Hats]({{ '/assets/images/3_robots_with_hats.jpg' | relative_url }})
 
 What if you could assemble a team of AI experts, each with their own specialized perspective, to tackle your toughest challenges? That's exactly what AIA's enhanced multi-model system enables. In this post, we'll explore how AIA v0.9.20 revolutionizes AI interaction by letting you assign specific roles to different models, track their performance with precision, and synthesize their insights into breakthrough solutions.
 
